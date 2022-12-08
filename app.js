@@ -1,5 +1,5 @@
 const power = (base, exponent) => {
-  if (base <= 1) {
+  if (base === 1) {
     return 1;
   }
 
@@ -8,7 +8,7 @@ const power = (base, exponent) => {
   }
 
   if (exponent < 1) {
-    return 1;
+    return 0;
   }
 
   return base * power(base, exponent - 1);
